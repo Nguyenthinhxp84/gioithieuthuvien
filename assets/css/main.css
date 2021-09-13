@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: TAHOMA", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #727272;
@@ -117,7 +117,7 @@ h6 {
   font-weight: 600;
   margin: 0px;
   color: #27314F;
-  font-family: TAHOMA", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 a,
@@ -1004,7 +1004,7 @@ ol {
 
 .breadcrumbs .breadcrumb-nav li:after {
   content: "\ea14";
-  font-family: TAHOMA", sans-serif;
+  font-family: lineIcons;
   font-size: 10px;
   position: absolute;
   top: 4px;
@@ -2910,7 +2910,7 @@ ol {
   color: #0069ff;
   font-size: 38px;
   font-weight: 600;
-  font-family: TAHOMA", sans-serif;
+  font-family: DM Sans;
 }
 
 .pricing .single-pricing .price .sent {
@@ -3010,11 +3010,11 @@ ol {
 }
 
 .pricing-style2 .single-pricing .p-icon {
-  height: 70px;
-  width: 70px;
+  height: 96px;
+  width: 218px;
   text-align: center;
   display: block;
-  border-radius: 7px;
+  border-radius: 12px;
   background: #0069ff0f;
   line-height: 90px;
 }
@@ -3044,7 +3044,7 @@ ol {
   color: #27314F;
   font-size: 38px;
   font-weight: 600;
-  font-family: TAHOMA", sans-serif;
+  font-family: DM Sans;
 }
 
 .pricing-style2 .single-pricing .price .sent {
@@ -3423,4 +3423,31 @@ ol {
 iframe {
     border: 0;
     width: -webkit-fill-available;
+}
+
+.contact_area {
+  position: relative;
+  z-index: 5;
+}
+
+.contact_area::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 42, 61, 0.9);
+  z-index: -1;
+}
+.bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.section_title.section_title_2 .title, .section_title.section_title_2 p {
+    color: #fff;
 }
