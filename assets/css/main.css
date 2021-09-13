@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: TAHOMA", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #727272;
@@ -117,7 +117,7 @@ h6 {
   font-weight: 600;
   margin: 0px;
   color: #27314F;
-  font-family: 'Poppins', sans-serif;
+  font-family: TAHOMA", sans-serif;
 }
 
 h1 a,
@@ -1004,7 +1004,7 @@ ol {
 
 .breadcrumbs .breadcrumb-nav li:after {
   content: "\ea14";
-  font-family: lineIcons;
+  font-family: TAHOMA", sans-serif;
   font-size: 10px;
   position: absolute;
   top: 4px;
@@ -2910,7 +2910,7 @@ ol {
   color: #0069ff;
   font-size: 38px;
   font-weight: 600;
-  font-family: DM Sans;
+  font-family: TAHOMA", sans-serif;
 }
 
 .pricing .single-pricing .price .sent {
@@ -3044,7 +3044,7 @@ ol {
   color: #27314F;
   font-size: 38px;
   font-weight: 600;
-  font-family: DM Sans;
+  font-family: TAHOMA", sans-serif;
 }
 
 .pricing-style2 .single-pricing .price .sent {
