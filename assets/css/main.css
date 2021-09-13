@@ -1147,6 +1147,7 @@ ol {
 .section-title.align-right {
   padding: 0;
   padding-left: 600px;
+  text-align: center;
 }
 
 .section-title.align-right h2:before {
@@ -1183,15 +1184,15 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 22px;
   color: #fff !important;
   position: fixed;
-  bottom: 30px;
+  bottom: 194px;
   right: 30px;
   z-index: 9;
   cursor: pointer;
@@ -2993,10 +2994,10 @@ ol {
 
 .pricing-style2 .single-pricing {
   margin-top: 30px;
-  padding: 45px 40px;
+  padding: 30px 26px;
   border-radius: 8px;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.068);
-          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.068);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.068);
   background-color: #fff;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -3010,8 +3011,8 @@ ol {
 }
 
 .pricing-style2 .single-pricing .p-icon {
-  height: 96px;
-  width: 218px;
+  height: auto;
+  width: auto;
   text-align: center;
   display: block;
   border-radius: 12px;
@@ -3450,4 +3451,22 @@ iframe {
 
 .section_title.section_title_2 .title, .section_title.section_title_2 p {
     color: #fff;
+}
+.fab {
+    font-size: calc(1.175rem + 2.5vw) !important;
+}
+
+.fa-facebook {
+   
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    margin-top: -18px;
+}
+.fa-linkedin {
+    
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    margin-top: -18px;
+}
+.fa-twitter {
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    margin-top: -18px;
 }
