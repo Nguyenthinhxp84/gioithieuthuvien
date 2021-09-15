@@ -2732,20 +2732,6 @@ ol {
   border: 1px solid #eeeeee80;
 }
 
-.features .single-feature1 {
-  margin-top: 30px;
-  padding: 50px 40px;
-  padding-right: 60px;
-  border-radius: 8px;
-  text-align: justify;
-  background-color: #fff;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;;
-  border: 1px solid #eeeeee80;
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .features .single-feature {
     padding: 40px 35px;
@@ -3492,3 +3478,34 @@ iframe {
   content: "\eab2";
 }
 
+.features .single-feature1 {
+  margin-top: 30px;
+  padding: 50px 40px;
+  padding-right: 60px;
+  border-radius: 8px;
+  text-align: justify;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: 1px solid #eeeeee80;
+}
+
+
+.features .single-feature1:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.096);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.096);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .features .single-feature1 .list-icon {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    margin-bottom: 25px;
+  }
+}
