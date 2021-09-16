@@ -3526,7 +3526,7 @@ iframe {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 700px;
   position: relative;
   margin: auto;
 }
@@ -3556,7 +3556,11 @@ iframe {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+}
+ 
+/* Thêm hiệu ứng khi chuyển đổi các slide */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
@@ -3580,4 +3584,8 @@ iframe {
   display: block;
   border-radius: 12px;
   line-height: 90px;
+}
+
+.text-uppercase {
+    margin-top: revert;
 }
