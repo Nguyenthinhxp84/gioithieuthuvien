@@ -312,40 +312,51 @@
             </div>
         </div>
     </section>
-    <div class="pricing-style2 section bg-gray" id="trienlam">
+
+<section>
+        <div class="pricing-style2 section bg-gray" id="gioithieukho">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Triễn lãm sách</h2>                        
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Giới thiệu các kho sách</h2>                        
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12">
                     <!-- Start Single Pricing s-->
                     <div class="single-pricing">
-                        <div class="p-icon1">
-                          <div id="slideshow">
-                           <div class="slide-wrapper">
-                             <div class="slide"><img src="assets/images/bst/1.jpg"></div>
-                             <div class="slide"><img src="assets/images/bst/2.jpg"></div>
-                             <div class="slide"><img src="assets/images/bst/3.jpg"></div>
-                             <div class="slide"><img src="assets/images/bst/4.jpg"></div>
-                             <div class="slide"><img src="assets/images/bst/5.jpg"></div>
-                             <div class="slide"><img src="assets/images/bst/6.jpg"></div>
-                           </div>
-                         </div>                      
-                        </div>
-                        
+                        <div class="slideshow-container">                              
+                              <div class="mySlides fade">
+                                <img src="assets/images/bst/1.jpg" style="width:100%">
+                                <div class="text">Nội dung caption của slide đầu tiên!</div>
+                              </div>
+                             
+                              <div class="mySlides fade">
+                                <img src="assets/images/bst/2.jpg" style="width:100%">
+                                <div class="text">Nội dung caption của slide thứ 2!</div>
+                              </div>
+                             
+                              <div class="mySlides fade">
+                                <img src="assets/images/bst/3.jpg" style="width:100%">
+                                <div class="text">Nội dung caption của slide thứ 3!</div>
+                              </div>
+                            </div>
+                            <br>
+                             
+                            <div style="text-align:center">
+                              <span class="dot" onclick="currentSlide(0)"></span> 
+                              <span class="dot" onclick="currentSlide(1)"></span> 
+                              <span class="dot" onclick="currentSlide(2)"></span> 
+                            </div>                       
                     </div>
                     <!-- End Single Pricing s-->
                 </div>               
-               
             </div>
         </div>
     </div>
-
+</section>
      <footer class="footer text-center" id="lienhe">
             <div class="container">
                 <div class="row">
@@ -390,7 +401,40 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script>
+  //khai báo biến slideIndex đại diện cho slide hiện tại
+  var slideIndex;
+  // KHai bào hàm hiển thị slide
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 5000);
+  }
+  //mặc định hiển thị slide đầu tiên 
+  showSlides(slideIndex = 0);
+ 
+ 
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+</script>
    
 </body>
 
