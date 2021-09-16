@@ -3494,7 +3494,7 @@ iframe {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #F4F7FA !important;
+  background-color: #065add21 !important;
   color: #fff;
 }
 
@@ -3522,4 +3522,35 @@ iframe {
 .fab {
     font-size: calc(0.175rem + 2.5vw) !important;
     color: red;
+}
+
+#slideshow {
+   overflow: hidden;
+   height: 510px;
+   width: 728px;
+   margin: 0 auto;
+ }
+.slide-wrapper {
+   width: 2912px;
+   -webkit-animation: slide 14s ease infinite;
+ }
+.slide {
+   float: left;
+   height: 510px;
+   width: 728px;
+ }
+@-webkit-keyframes slide {
+   20% {margin-left: 0px;}
+   30% {margin-left: -728px;}
+   50% {margin-left: -728px;}
+   60% {margin-left: -1456px;}
+   80% {margin-left: -1456px;}
+ }
+ .pricing-style2 .single-pricing .p-icon1 {
+  height: 450px;
+  width: auto;
+  text-align: center;
+  display: block;
+  border-radius: 12px;
+  line-height: 90px;
 }
