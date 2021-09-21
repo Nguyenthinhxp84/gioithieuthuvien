@@ -31,3 +31,17 @@
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
+
+const menuTitle = document.querySelector(".menu-hs-title");
+menuTitle.addEventListener("click",function(x) {
+  if(x.target.classList.contains("menus-button")){
+    const Target = x.target.getAttribute("data-title");
+    // console.log(Target)
+    menuTitle.querySelector(".active").classList.remove("active");
+    x.target.classList.add("active");
+
+    const menuItem = document.querySelector(".menu-hs");
+    menuItem.querySelector(".menu-item-content.active").classList.remove("active");
+    menuItem.querySelector(Target).classList.add("active")
+  }
+})

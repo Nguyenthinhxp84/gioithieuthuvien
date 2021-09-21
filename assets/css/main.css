@@ -1742,17 +1742,19 @@ ol {
   position: fixed;
   z-index: 99;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 0px 0;
+  background: #dfeafb;
 }
 
 .navbar {
   padding: 0;
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+  /* transition: all 0.3s ease-out 0s; */
+  /* background: red; */
 }
 
 .navbar-brand {
@@ -3530,11 +3532,11 @@ iframe {
   position: relative;
   margin: auto;
 }
-/* Ẩn các slider */
+/* áº¨n cÃ¡c slider */
 .mySlides {
     display: none;
 }
-/* Định dạng nội dung Caption */
+/* Äá»‹nh dáº¡ng ná»™i dung Caption */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -3545,7 +3547,7 @@ iframe {
   text-align: center;
 }
  
-/* định dạng các chấm chuyển đổi các slide */
+/* Ä‘á»‹nh dáº¡ng cÃ¡c cháº¥m chuyá»ƒn Ä‘á»•i cÃ¡c slide */
 .dot {
   cursor:pointer;
   height: 13px;
@@ -3556,11 +3558,11 @@ iframe {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-/* khi được hover, active đổi màu nền */
+/* khi Ä‘Æ°á»£c hover, active Ä‘á»•i mÃ u ná»n */
 .active, .dot:hover {
 }
  
-/* Thêm hiệu ứng khi chuyển đổi các slide */
+/* ThÃªm hiá»‡u á»©ng khi chuyá»ƒn Ä‘á»•i cÃ¡c slide */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
@@ -3589,3 +3591,96 @@ iframe {
 .text-uppercase {
     margin-top: revert;
 }
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+
+}
+
+.menu-hs {
+  background-color: var(--text-color);
+}
+
+.menu-hs-title {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-hs-title .menus-button {
+  background-color: transparent;
+  margin: 10px 12px;
+  border: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+.menu-hs-title .menus-button.active {
+  color: var(--bs-blue);
+  font-weight: bold;
+}
+
+.menu-hs-title .menus-button:hover {
+  color: var(--bs-blue);
+  font-weight: bold;
+}
+.hoisach-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 47px;
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 1px 1px;
+}
+
+.hoisach-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  border: 2px dashed var(--span-color);
+  width: 92%;
+}
+
+.hoisach-items:hover .hoisach-item p {
+  color: var(--sub-color);  
+
+}
+
+.hoisach-item {
+    display: flex;
+    align-items: center;   
+}
+
+
+.hoisach-item img {
+    width: 550px;
+
+
+}
+
+
+.menu-item-content {
+  display: none;
+}
+
+.menu-item-content.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-hs .shape {
+    position: absolute;
+    left: -76px;
+    bottom: -74px;
+    height: 150px;
+    width: 150px;
+    z-index: 5;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
